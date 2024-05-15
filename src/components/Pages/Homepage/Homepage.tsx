@@ -29,6 +29,20 @@ const LinkContainer = styled.div`
     }
 `
 
+const PageName = styled.h3`
+    color: #fff;
+    font-weight: 500;
+    margin-left: 20px;
+`
+
+const PageDescription = styled.h4`
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 20px;
+    color: #b9b9b9;
+`
+
 
 export const Homepage = () => {
 
@@ -44,22 +58,25 @@ export const Homepage = () => {
             <h2 style={{ color: "#fff", textAlign: "center", marginBottom: "30px", fontWeight: "500" }}>Do more with your jettons</h2>
             <LinkContainer style={{ marginTop: "0px" }}>
                 <HomepageLink to="/manage">
-
+                    <PageName>Manage Position</PageName>
+                    <PageDescription>Mint or burn jUSD on your condition</PageDescription>
                 </HomepageLink>
             </LinkContainer>
             <LinkContainer>
                 <HomepageLink to="/stableswap">
-
+                    <PageName>Stableswap</PageName>
+                    <PageDescription>Mint or burn jUSD on your condition</PageDescription>
                 </HomepageLink>
             </LinkContainer>
             <LinkContainer>
                 <HomepageLink to="/auctions">
-
+                    <PageName>Auctions</PageName>
+                    <PageDescription>Bid jUSD on liquidated position</PageDescription>
                 </HomepageLink>
             </LinkContainer>
             <h2 style={{ color: "#fff", textAlign: "center", margin: "30px 0px", fontWeight: "500" }}>Join our community</h2>
-            {isDes && <HomepageFooterDes/>}
-            {isMob && <HomepageFooterMob/>}
+            {isDes && <HomepageFooterDes />}
+            {isMob && <HomepageFooterMob />}
         </Container>
     )
 }
