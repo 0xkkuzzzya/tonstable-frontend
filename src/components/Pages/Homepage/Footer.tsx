@@ -22,6 +22,10 @@ const FooterLink = styled.a`
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
+    white-space: nowrap;
+    @media (max-width: 380px) {
+        font-size: 13px;
+    }
 `
 
 
