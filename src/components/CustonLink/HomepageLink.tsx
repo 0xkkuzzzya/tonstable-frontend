@@ -8,7 +8,7 @@ const LinkBLock = styled(LinkText)`
     height: 100%;
     display: flex;
     text-decoration: none;
-    flex-direction: column;
+    flex-direction: row;
 `
 
 interface Props {

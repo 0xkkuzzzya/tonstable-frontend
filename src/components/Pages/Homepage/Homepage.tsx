@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { HomepageLink } from "../../CustonLink/HomepageLink";
 import { HomepageFooterDes, HomepageFooterMob } from "./Footer";
 import { useMediaQuery } from "react-responsive";
+import Zap from '../../../assets/zap.png'
+import Bank from '../../../assets/bank1.png'
+import Scale from '../../../assets/scale1.png'
 
 const Container = styled.div`
     width: 60%;
@@ -31,6 +34,7 @@ const LinkContainer = styled.div`
 
 const PageName = styled.h3`
     color: #fff;
+    margin-bottom: 10px;
     font-weight: 500;
     margin-left: 20px;
 `
@@ -41,6 +45,19 @@ const PageDescription = styled.h4`
     margin: 0;
     margin-left: 20px;
     color: #b9b9b9;
+`
+
+const EmojiContainer = styled.div`
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+const EmojiLogo = styled.img`
+    width: 100px;
+    height: 100px;
 `
 
 
@@ -58,20 +75,35 @@ export const Homepage = () => {
             <h2 style={{ color: "#fff", textAlign: "center", marginBottom: "30px", fontWeight: "500" }}>Do more with your jettons</h2>
             <LinkContainer style={{ marginTop: "0px" }}>
                 <HomepageLink to="/manage">
-                    <PageName>Manage Position</PageName>
-                    <PageDescription>Mint or burn jUSD on your condition</PageDescription>
+                    <div>
+                        <PageName>Manage Position</PageName>
+                        <PageDescription>Mint or burn jUSD on your condition</PageDescription>
+                    </div>
+                    <EmojiContainer>
+                        <EmojiLogo style={{width: "50px", height: "50px", marginRight: "12px"}} src={Bank}></EmojiLogo>
+                    </EmojiContainer>
                 </HomepageLink>
             </LinkContainer>
             <LinkContainer>
                 <HomepageLink to="/stableswap">
-                    <PageName>Stableswap</PageName>
-                    <PageDescription>Mint or burn jUSD on your condition</PageDescription>
+                    <div>
+                        <PageName>Stableswap</PageName>
+                        <PageDescription>Mint or burn jUSD on your condition</PageDescription>
+                    </div>
+                    <EmojiContainer>
+                        <EmojiLogo style={{width: "50px", height: "50px", marginRight: "12px"}} src={Scale}></EmojiLogo>
+                    </EmojiContainer>
                 </HomepageLink>
             </LinkContainer>
             <LinkContainer>
                 <HomepageLink to="/auctions">
-                    <PageName>Auctions</PageName>
-                    <PageDescription>Bid jUSD on liquidated position</PageDescription>
+                    <div>
+                        <PageName>Auctions</PageName>
+                        <PageDescription>Bid jUSD on liquidated position</PageDescription>
+                    </div>
+                    <EmojiContainer>
+                        <EmojiLogo src={Zap}></EmojiLogo>
+                    </EmojiContainer>
                 </HomepageLink>
             </LinkContainer>
             <h2 style={{ color: "#fff", textAlign: "center", margin: "30px 0px", fontWeight: "500" }}>Join our community</h2>
