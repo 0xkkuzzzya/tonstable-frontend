@@ -16,9 +16,16 @@ const ContainerLogo = styled.div`
 `
 
 const Logo = styled.img`
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px;
+`
+
+const HeaderText = styled.a`
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    margin-left: 10px;
 `
 
 
@@ -27,7 +34,7 @@ export const MainHeader = () => {
         <Header>
             <ContainerLogo>
                 <Logo src={TonStable} />
-                <h2 style={{ marginLeft: "1rem", color: "#fff" }}>Tonstable</h2>
+                <HeaderText>Tonstable</HeaderText>
             </ContainerLogo>
             <TonConnectButton />
         </Header>
