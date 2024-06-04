@@ -53,6 +53,7 @@ const EmojiContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
 `
 
 const EmojiLogo = styled.img`
@@ -80,7 +81,7 @@ export const Homepage = () => {
                         <PageDescription>Mint or burn jUSD on your condition</PageDescription>
                     </div>
                     <EmojiContainer>
-                        <EmojiLogo style={{width: "50px", height: "50px", marginRight: "12px"}} src={Bank}></EmojiLogo>
+                        <EmojiLogo style={{width: "50px", height: "50px", marginRight: "10px"}} src={Bank}></EmojiLogo>
                     </EmojiContainer>
                 </HomepageLink>
             </LinkContainer>
@@ -91,7 +92,7 @@ export const Homepage = () => {
                         <PageDescription>Mint or burn jUSD on your condition</PageDescription>
                     </div>
                     <EmojiContainer>
-                        <EmojiLogo style={{width: "50px", height: "50px", marginRight: "12px"}} src={Scale}></EmojiLogo>
+                        <EmojiLogo style={{width: "50px", height: "50px", marginRight: "10px"}} src={Scale}></EmojiLogo>
                     </EmojiContainer>
                 </HomepageLink>
             </LinkContainer>
